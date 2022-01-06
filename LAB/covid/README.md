@@ -2,8 +2,14 @@ This is the repository for the final project for Computer Intelligence @ the UPC
 
 
 Dataset: Coswara-Covid-Cough
+
+
 Models: ANN, CNN, RNN, Geometric Deep Neural Network (GDNN)
+
+
 Framework: PyTorch 
+
+
 Libraries: numpy, pandas, sklearn, pytorch, wandb, termcolor, librosa, 
 
 
