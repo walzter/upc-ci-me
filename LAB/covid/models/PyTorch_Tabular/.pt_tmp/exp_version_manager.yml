@@ -1,0 +1,12 @@
+classification: 38
+synthetic_classification_cat_embedding: 2
+CategoryEmbeddingModel_64_1000_1024-512-512_LeakyReLU_0.001: 1
+CategoryEmbeddingModel_32_1000_1024-512-512_LeakyReLU_0.001: 2
+CategoryEmbeddingModel_64_100_1024-512-512_LeakyReLU_0.01: 3
+CategoryEmbeddingModel_64_100_1024-512-512_LeakyReLU_0.001: 2
+CategoryEmbeddingModel_64_100_1024-512-512_LeakyReLU_0.0001: 2
+CategoryEmbeddingModel_64_100_1024-512-512_TanH_0.01: 1
+CategoryEmbeddingModel_64_100_1024-512-512_ReLU_0.01: 1
+CategoryEmbeddingModel_64_100_1024-512-512_ReLU_0.001: 1
+CategoryEmbeddingModel_64_100_1024-512-512_ReLU_0.0001: 1
+CategoryEmbeddingModel_64_100_1024-512-512_GLU_0.01: 1
