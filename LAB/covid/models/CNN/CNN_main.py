@@ -39,8 +39,9 @@ CONFIG_DICT = {
 			    'TO_SHUFFLE': True,
 			    'EPOCHS': 100,
 			    'N_BATCHES': 20,
-			    'LEARNING_RATE': 0.01,
-			    'MOMENTUM': 0.9
+			    'LEARNING_RATE': 0.1,
+			    'MOMENTUM': 0.9,
+			    'WEIGHT_DECAY':0.8
     			}
 
 
@@ -65,13 +66,14 @@ def main(CONFIG_DICT):
     optimizer = torch.optim.SGD(net.parameters(),
                                 lr=CONFIG_DICT['LEARNING_RATE'],
                                 momentum=CONFIG_DICT['MOMENTUM'])
+    opt = Adam(net.parameters(), lr=CONFIG_DICT['LEARNING_RATE'])
     # define the criteria
     criteria = nn.CrossEntropyLoss()
 
-    for i in range(CONFIG_DICT['EPOCHS']):
-        train_check_loop(train_loader, device, net, optimizer, criteria, i)
-        test_check_loop(test_loader, device, net, optimizer,criteria, i, CONFIG_DICT['N_BATCHES'])
-        val_check_loop(val_loader, device, net, optimizer,criteria, i, CONFIG_DICT['N_BATCHES'])
+    for i in range(1, CONFIG_DICT['EPOCHS']+1):
+        train_check_loop(train_loader, device, net, opt, criteria, i)
+        test_check_loop(test_loader, device, net, opt,criteria, i, CONFIG_DICT['N_BATCHES'])
+        val_check_loop(val_loader, device, net, opt,criteria, i, CONFIG_DICT['N_BATCHES'])
 
 
 if __name__ == "__main__":

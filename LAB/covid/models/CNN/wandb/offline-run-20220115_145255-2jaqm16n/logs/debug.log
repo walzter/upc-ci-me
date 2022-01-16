@@ -1,0 +1,21 @@
+2022-01-15 14:52:55,315 INFO    MainThread:2018 [wandb_setup.py:_flush():71] setting env: {}
+2022-01-15 14:52:55,315 INFO    MainThread:2018 [wandb_init.py:_log_setup():371] Logging user logs to /Users/Eric/Documents/Uni/Msc/Courses/Sem1/CI/LAB/covid/models/CNN/wandb/offline-run-20220115_145255-2jaqm16n/logs/debug.log
+2022-01-15 14:52:55,315 INFO    MainThread:2018 [wandb_init.py:_log_setup():372] Logging internal logs to /Users/Eric/Documents/Uni/Msc/Courses/Sem1/CI/LAB/covid/models/CNN/wandb/offline-run-20220115_145255-2jaqm16n/logs/debug-internal.log
+2022-01-15 14:52:55,315 INFO    MainThread:2018 [wandb_init.py:init():404] calling init triggers
+2022-01-15 14:52:55,315 INFO    MainThread:2018 [wandb_init.py:init():409] wandb.init called with sweep_config: {}
+config: {}
+2022-01-15 14:52:55,315 INFO    MainThread:2018 [wandb_init.py:init():460] starting backend
+2022-01-15 14:52:55,316 INFO    MainThread:2018 [backend.py:_multiprocessing_setup():99] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2022-01-15 14:52:55,330 INFO    MainThread:2018 [backend.py:ensure_launched():216] starting backend process...
+2022-01-15 14:52:55,340 INFO    MainThread:2018 [backend.py:ensure_launched():221] started backend process with pid: 2025
+2022-01-15 14:52:55,343 INFO    MainThread:2018 [wandb_init.py:init():469] backend started and connected
+2022-01-15 14:52:55,351 INFO    MainThread:2018 [wandb_init.py:init():533] updated telemetry
+2022-01-15 14:52:55,381 INFO    MainThread:2018 [wandb_init.py:init():606] starting run threads in backend
+2022-01-15 14:53:00,382 INFO    MainThread:2018 [wandb_run.py:_console_start():1810] atexit reg
+2022-01-15 14:53:00,383 INFO    MainThread:2018 [wandb_run.py:_redirect():1684] redirect: SettingsConsole.REDIRECT
+2022-01-15 14:53:00,384 INFO    MainThread:2018 [wandb_run.py:_redirect():1689] Redirecting console.
+2022-01-15 14:53:00,387 INFO    MainThread:2018 [wandb_run.py:_redirect():1745] Redirects installed.
+2022-01-15 14:53:00,387 INFO    MainThread:2018 [wandb_init.py:init():633] run started, returning control to user process
+2022-01-15 14:53:00,387 INFO    MainThread:2018 [wandb_watch.py:watch():43] Watching
+2022-01-15 14:53:44,638 INFO    MainThread:2018 [wandb_run.py:_atexit_cleanup():1780] got exitcode: 255
+2022-01-15 14:53:44,654 INFO    MainThread:2018 [wandb_run.py:_restore():1752] restore

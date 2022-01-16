@@ -73,3 +73,15 @@ def load_data_split(PATH_TO_FILE, TRAIN_RATIO, VALIDATION_RATIO, BATCH_SIZE, TO_
     dataloaders = (train_loader, test_loader, val_loader)
 
     return datasets, dataloaders
+
+# permute the dataloader images & load to device 
+def permute_dataloader(PHASE_LOADER):
+    '''
+         vinputs = vinputs.permute(0, 3, 2, 1)
+            vinputs = vinputs.float()
+    '''
+    for idx, data in enumerate(PHASE_LOADER):
+        inputs, outputs = data
+        data = data.permute(0,3,2,1).float()
+        PHASE_LOADER[idx][]
+        

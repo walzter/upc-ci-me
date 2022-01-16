@@ -5,7 +5,7 @@ import cv2
 from torch.utils.data import Dataset
 
 class CovidCoughDatasetSpectrograms(Dataset):
-    def __init__(self,label, data):
+    def __init__(self,label, data,permute_float=True):
         self.data = data
         self.label = label
 
@@ -19,4 +19,13 @@ class CovidCoughDatasetSpectrograms(Dataset):
         image = cv2.resize(image, (32,32),interpolation=cv2.INTER_AREA)
         image = (image/255.)
         label = self.label[idx]
+        if permute_float:
+            # convert to tensor
+            
+
         return image, label
+
+
+
+     vinputs = vinputs.permute(0, 3, 2, 1)
+            vinputs = vinputs.float()

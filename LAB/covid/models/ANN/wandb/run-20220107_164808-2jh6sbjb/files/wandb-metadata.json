@@ -1,0 +1,22 @@
+{
+    "os": "macOS-10.15.7-x86_64-i386-64bit",
+    "python": "3.8.5",
+    "heartbeatAt": "2022-01-07T15:48:10.774440",
+    "startedAt": "2022-01-07T15:48:08.868415",
+    "docker": null,
+    "cpu_count": 4,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "ann_main.py",
+    "codePath": "LAB/covid/models/ANN/ann_main.py",
+    "git": {
+        "remote": "https://github.com/walzter/UPC_CI.git",
+        "commit": "223502cbde219848d425caf2d55082a5501d31f0"
+    },
+    "email": "ewalzthony@gmail.com",
+    "root": "/Users/Eric/Documents/Uni/Msc/Courses/Sem1/CI",
+    "host": "10-192-216-187client.eduroam.upc.edu",
+    "username": "Eric",
+    "executable": "/Users/Eric/opt/anaconda3/envs/ci_covid/bin/python3"
+}

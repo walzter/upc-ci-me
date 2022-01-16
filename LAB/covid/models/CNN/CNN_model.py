@@ -14,6 +14,8 @@ class ConvNet(nn.Module):
 
     def forward(self, x):
         x = self.pool(F.relu(self.conv1(x)))
+        #x = F.relu(self.conv1(x))
+        #x = F.relu(self.conv2(x))
         x = self.pool(F.relu(self.conv2(x)))
         x = torch.flatten(x, 1)  # flatten all dimensions except batch
         x = F.relu(self.fc1(x))
